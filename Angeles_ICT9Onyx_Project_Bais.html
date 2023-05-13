@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<title>ICT9O | 4thQ | Project</title>
+</head>
+<body class="bg-secondary">
+	<center><h1 class="text-light">Unit Conversion</h1></center>
+<div>
+<form class="bg-dark">
+		
+
+		<h3 class="text-light">Enter Milimeter :</h3> 
+	<input type="number" name="num1" id="num1"><br>
+	<button type=""class="btn-secondary btn-lg" onclick="compute()">Milimeter to Centimeter</button>
+	
+	
+	
+	<button type="" class="btn-secondary btn-lg" onclick="Compute()">Milimeter to Meter</button>
+	
+
+	
+	<button type="" class="btn-secondary btn-lg" onclick="computE()">Milimeter to Kilometers</button>
+	</div>
+
+	<script type="text/javascript">
+		let num2=10
+
+
+			function compute(){
+			var num1 = document.getElementById("num1").value;
+			var Centi = Number (num1) / Number(num2);
+			alert("The conversion is" +  Centi);
+			}
+
+			function Compute(){
+			var num1 = document.getElementById("num1").value;
+			var Centi = Number (num1) / 1000;
+			alert("The conversion is" +  Centi);
+			}
+
+			function computE(){
+			var num1 = document.getElementById("num1").value;
+			var Kilo = Number (num1) / 100000;
+			alert("The conversion is" +  Kilo);
+			}
+			
+		</script>
+</body>
+</html>
